@@ -9,3 +9,6 @@ docker_kindle winetricks -q cjkfonts vcrun2013
 docker_kindle /bin/bash -c 'cd && wine KindleForPC-installer-*.exe'
 docker_kindle /bin/bash -c "wine '/home/wineuser/.wine/dosdevices/c:/Program Files (x86)/Amazon/Kindle/Kindle.exe'"
 xhost -si:localuser:#2000
+
+sed -i -e "s|{{kindle_docker_path}}|$(pwd)|" Kindle.desktop
+cp Kindle.desktop "${HOME}/.local/share/applications/wine/Programs/Amazon/Amazon Kindle/Kindle.desktop"

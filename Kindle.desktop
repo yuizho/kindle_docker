@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Kindle
+Exec=bash -c "/home/yuizho/work/docker/kindle_docker/start_kindle.sh"
+Comment=Kindle
+Type=Application
+StartupNotify=true
+Icon=C9D2_Kindle.0
