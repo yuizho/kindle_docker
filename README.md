@@ -5,8 +5,6 @@
 ### インストール
 
 ```console
-git clone git@github.com:junkawa/kindle_docker.git
-cd kindle_docker
 docker build -t kindle_img ./
 ./install_kindle.sh
 ```
@@ -18,6 +16,8 @@ docker build -t kindle_img ./
 ```console
 ./start_kindle.sh
 ```
+
+or desktop から起動できるようになっているのでそちらから起動
 
 ### その他
 
